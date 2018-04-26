@@ -1,4 +1,4 @@
-swapoff -a
+sudo swapoff -a
 sudo sed -i 's/.*swap/#&/' /etc/fstab
 
 kubeadm init --pod-network-cidr=10.244.0.0/16
